@@ -4,14 +4,32 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(35, 160, 35);
+}
+
 .game-board {
   width: 100%;
-  height: 500px;
+  height: 80vh;
   border-bottom: 15px solid rgb(35, 160, 35);
   margin: 0 auto;
   position: relative;
   overflow: hidden;
   background: linear-gradient(#87ceeb, #e0f6ff);
+  #reset {
+    position: relative;
+    display: none;
+    top: 50%;
+    left: 40%;
+    width: 20vw;
+    height: 10vh;
+    font-family: "Press Start 2P", cursive;
+    font-size: 2rem;
+    background-color: #a1a1a1;
+    border-radius: 5px;
+    box-shadow: black 1px 1px 2px;
+    cursor: pointer;
+  }
 }
 
 .pipe {
@@ -34,7 +52,7 @@
 .clouds {
   width: 550px;
   position: absolute;
-  animation: clouds-animation 10s infinite linear;
+  animation: clouds-animation 20s infinite linear;
 }
 
 @keyframes pipe-animation {
